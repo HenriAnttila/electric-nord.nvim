@@ -36,6 +36,7 @@ local c = {
   aurora_green = "#A3D9A5",
 
   -- Special
+  hint_gray = "#6A737D",
   none = "NONE",
 }
 
@@ -515,8 +516,8 @@ hi("CmpItemKindValue", { fg = c.vesper_amber })
 hi("CmpItemKindVariable", { fg = c.snow0 })
 
 -- Copilot
-hi("CopilotSuggestion", { fg = "#6A737D", italic = true })
-hi("CopilotAnnotation", { fg = "#6A737D", italic = true })
+hi("CopilotSuggestion", { fg = c.hint_gray, italic = true })
+hi("CopilotAnnotation", { fg = c.hint_gray, italic = true })
 
 -- Mini
 hi("MiniIndentscopeSymbol", { fg = c.electric1 })
@@ -592,5 +593,7 @@ hi("BlinkCmpDoc", { fg = c.snow0, bg = c.polar1 })
 hi("BlinkCmpDocBorder", { fg = c.electric1, bg = c.polar1 })
 hi("BlinkCmpSignatureHelp", { fg = c.snow0, bg = c.polar1 })
 hi("BlinkCmpSignatureHelpBorder", { fg = c.electric1, bg = c.polar1 })
+hi("ComplHint", { fg = c.hint_gray, italic = true })
+hi("ComplHintMore", { fg = c.hint_gray, italic = true })
 
 return M
